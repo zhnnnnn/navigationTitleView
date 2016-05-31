@@ -1,0 +1,3 @@
+# navigationTitleView
+navibar 设置背景透明度 颜色 位置的一个小demo
+这种使用真bar的模式还是会有一些问题，你可以下demo看看，你跳转的两个navibar的透明度相差太大的情况下会有一闪一闪的效果。思路供参考吧，明天准备用假bar实现效果更好的方式。
