@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "UINavigationBar+coolStyle.h"
+#import "secondViewController.h"
 
 @interface ViewController ()
 
@@ -16,12 +18,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    
+    self.navigationController.navigationBar.barTintColor = [UIColor blueColor];
+    
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    
+    [super viewWillAppear:animated];
+    [self.navigationController.navigationBar zhn_setBackGroundAlpha:0.3];
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+}
+- (IBAction)pushVC:(id)sender {
+    
+    secondViewController * secondVC = [[secondViewController alloc]init];
+    [self.navigationController pushViewController:secondVC animated:YES];
 }
 
 @end

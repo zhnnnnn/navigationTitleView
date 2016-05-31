@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD2BEC2B1CFD8ED100329E90 /* UIViewController+coolStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = CD2BEC2A1CFD8ED100329E90 /* UIViewController+coolStyle.m */; };
 		CD91912C1CFD74CE00F2F883 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD91912B1CFD74CE00F2F883 /* main.m */; };
 		CD91912F1CFD74CE00F2F883 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD91912E1CFD74CE00F2F883 /* AppDelegate.m */; };
 		CD9191321CFD74CE00F2F883 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9191311CFD74CE00F2F883 /* ViewController.m */; };
@@ -15,6 +16,8 @@
 		CD91913A1CFD74CE00F2F883 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD9191381CFD74CE00F2F883 /* LaunchScreen.storyboard */; };
 		CD9191451CFD74CE00F2F883 /* navigationTitleViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9191441CFD74CE00F2F883 /* navigationTitleViewTests.m */; };
 		CD9191501CFD74CE00F2F883 /* navigationTitleViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD91914F1CFD74CE00F2F883 /* navigationTitleViewUITests.m */; };
+		CD91915F1CFD7A0A00F2F883 /* UINavigationBar+coolStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = CD91915E1CFD7A0A00F2F883 /* UINavigationBar+coolStyle.m */; };
+		CD9191621CFD7F9C00F2F883 /* secondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9191611CFD7F9C00F2F883 /* secondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CD2BEC291CFD8ED100329E90 /* UIViewController+coolStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+coolStyle.h"; sourceTree = "<group>"; };
+		CD2BEC2A1CFD8ED100329E90 /* UIViewController+coolStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+coolStyle.m"; sourceTree = "<group>"; };
 		CD9191271CFD74CE00F2F883 /* navigationTitleView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = navigationTitleView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD91912B1CFD74CE00F2F883 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CD91912D1CFD74CE00F2F883 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +56,10 @@
 		CD91914B1CFD74CE00F2F883 /* navigationTitleViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = navigationTitleViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD91914F1CFD74CE00F2F883 /* navigationTitleViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = navigationTitleViewUITests.m; sourceTree = "<group>"; };
 		CD9191511CFD74CE00F2F883 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD91915D1CFD7A0A00F2F883 /* UINavigationBar+coolStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+coolStyle.h"; sourceTree = "<group>"; };
+		CD91915E1CFD7A0A00F2F883 /* UINavigationBar+coolStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+coolStyle.m"; sourceTree = "<group>"; };
+		CD9191601CFD7F9C00F2F883 /* secondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = secondViewController.h; sourceTree = "<group>"; };
+		CD9191611CFD7F9C00F2F883 /* secondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = secondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +114,9 @@
 				CD91912E1CFD74CE00F2F883 /* AppDelegate.m */,
 				CD9191301CFD74CE00F2F883 /* ViewController.h */,
 				CD9191311CFD74CE00F2F883 /* ViewController.m */,
+				CD9191601CFD7F9C00F2F883 /* secondViewController.h */,
+				CD9191611CFD7F9C00F2F883 /* secondViewController.m */,
+				CDD076491CFDDDEB0055C94B /* navibarcoolstyle */,
 				CD9191331CFD74CE00F2F883 /* Main.storyboard */,
 				CD9191361CFD74CE00F2F883 /* Assets.xcassets */,
 				CD9191381CFD74CE00F2F883 /* LaunchScreen.storyboard */,
@@ -138,6 +150,17 @@
 				CD9191511CFD74CE00F2F883 /* Info.plist */,
 			);
 			path = navigationTitleViewUITests;
+			sourceTree = "<group>";
+		};
+		CDD076491CFDDDEB0055C94B /* navibarcoolstyle */ = {
+			isa = PBXGroup;
+			children = (
+				CD91915D1CFD7A0A00F2F883 /* UINavigationBar+coolStyle.h */,
+				CD91915E1CFD7A0A00F2F883 /* UINavigationBar+coolStyle.m */,
+				CD2BEC291CFD8ED100329E90 /* UIViewController+coolStyle.h */,
+				CD2BEC2A1CFD8ED100329E90 /* UIViewController+coolStyle.m */,
+			);
+			name = navibarcoolstyle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,7 +295,10 @@
 			files = (
 				CD9191321CFD74CE00F2F883 /* ViewController.m in Sources */,
 				CD91912F1CFD74CE00F2F883 /* AppDelegate.m in Sources */,
+				CD2BEC2B1CFD8ED100329E90 /* UIViewController+coolStyle.m in Sources */,
+				CD91915F1CFD7A0A00F2F883 /* UINavigationBar+coolStyle.m in Sources */,
 				CD91912C1CFD74CE00F2F883 /* main.m in Sources */,
+				CD9191621CFD7F9C00F2F883 /* secondViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +522,7 @@
 				CD9191561CFD74CE00F2F883 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CD9191571CFD74CE00F2F883 /* Build configuration list for PBXNativeTarget "navigationTitleViewTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +531,7 @@
 				CD9191591CFD74CE00F2F883 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CD91915A1CFD74CE00F2F883 /* Build configuration list for PBXNativeTarget "navigationTitleViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +540,7 @@
 				CD91915C1CFD74CE00F2F883 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
