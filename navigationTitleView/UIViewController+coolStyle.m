@@ -33,10 +33,26 @@ void exchangeMehtod(Class class,SEL originalSel,SEL newSel){
         SEL viewDisAppearOriginalSEL = @selector(viewWillDisappear:);
         SEL viewDisAppearNewSEL = @selector(zhn_viewWillDisappear:);
         
+        //
+        SEL viewWillAppearOriginalSEL = @selector(viewWillAppear:);
+        SEL viewWillAppearNewSEL = @selector(zhn_viewWillAppear:);
+        
         exchangeMehtod(class, viewDisAppearOriginalSEL, viewDisAppearNewSEL);
+        exchangeMehtod(class, viewWillAppearOriginalSEL, viewWillAppearNewSEL);
     });
 }
 
+
+- (void)zhn_viewWillAppear:(BOOL)animated{
+    
+    [self zhn_viewWillAppear:animated];
+    
+    if ([self.navigationController.navigationBar.subviews firstObject].alpha == 0){
+         [self.navigationController setNavigationBarHidden:YES animated:animated];
+    }else{
+        [self.navigationController setNavigationBarHidden:NO animated:animated];
+    }
+}
 
 - (void)zhn_viewWillDisappear:(BOOL)animated{
     

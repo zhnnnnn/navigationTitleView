@@ -26,9 +26,10 @@
 
 - (void)viewWillAppear:(BOOL)animated{
     
+    [self.navigationController.navigationBar zhn_setBackGroundAlpha:0];
     [super viewWillAppear:animated];
-    [self.navigationController.navigationBar zhn_setBackGroundAlpha:0.3];
     
+   
 }
 
 - (void)didReceiveMemoryWarning {
